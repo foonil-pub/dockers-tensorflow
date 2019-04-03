@@ -1,20 +1,11 @@
 #!/bin/bash
-#更换 ubuntu apt 国内阿里云软件源，增速下载
+#更换 ubuntu apt 国内中科大软件源，增速下载
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
-echo "deb https://mirrors.ustc.edu.cn/ubuntu/ trusty main restricted universe multiverse\n\
-deb https://mirrors.ustc.edu.cn/ubuntu/ trusty-security main restricted universe multiverse\n\
-deb https://mirrors.ustc.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse\n\
-deb https://mirrors.ustc.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse\n\
-deb https://mirrors.ustc.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse\n\
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ trusty main restricted universe multiverse\n\
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ trusty-security main restricted universe multiverse\n\
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse\n\
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse\n\
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse\n" >/etc/apt/sources.list
+sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 apt update
 
 #安装支持软件
-sudo apt install \
+sudo apt install -y\
     apt-transport-https \
     ca-certificates \
     curl \
@@ -31,4 +22,4 @@ $(lsb_release -cs) stable"
 apt update
 
 #安装docker-ce
-apt install docker-ce docker-ce-cli containerd.io
+apt install -y docker-ce docker-ce-cli containerd.io
