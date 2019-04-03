@@ -5,8 +5,8 @@
 
 ## 步骤
 ### 1. 下载、安装官方 Docker 应用
-* Windows 用户，点击[此链接](!https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)下载， 一路 Next 安装完毕。
-* Mac 用户，点击[此链接](!https://download.docker.com/mac/stable/Docker.dmg)下载，装载dmg后直接拖到Application完毕。
+* Windows 用户，点击[此链接](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)下载， 一路 Next 安装完毕。
+* Mac 用户，点击[此链接](https://download.docker.com/mac/stable/Docker.dmg)下载，装载dmg后直接拖到Application完毕。
 * Ubuntu 18.04 用户，运行下列命令
 ```sh
 curl https://raw.github.com/foonil-pub/dockers-tensorflow/master/docker-ce-ubuntu1804.sh | sudo bash
@@ -32,7 +32,7 @@ docker run -P -d foonil/tensorflow:cpu-1.12.0-py3
 
 
 ## 安全性说明
-Docker Images 由开源的 DockerFile 构建，点击[这里](!https://github.com/foonil-pub/dockers-tensorflow/)查看
+Docker Images 由开源的 DockerFile 构建，点击[这里](https://github.com/foonil-pub/dockers-tensorflow/)查看
 
 ## 其它说明
 个人维护项目，不断完善中，请轻拍。若有建议，欢迎到 github 反馈，或发邮件 foonil@pm.me 
