@@ -1,4 +1,4 @@
-# “懒人”的 Tensorflow 环境
+# "懒人"的 Tensorflow 环境
 ## 初衷
 - 在自己的“破”电脑上，3分钟在完成环境的准备，开始学习 Machine Learning，支持Windows、Mac、Ubuntu
 - 在昂贵的GPU云服务上，3分钟完成环境的准备，开始 Training Models，支持Ubuntu
