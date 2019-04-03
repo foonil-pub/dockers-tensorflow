@@ -9,7 +9,7 @@
 * Mac 用户，点击[此链接](!https://download.docker.com/mac/stable/Docker.dmg)下载，装载dmg后直接拖到Application完毕。
 * Ubuntu 18.04 用户，运行下列命令
 ```sh
-curl https://raw.githubusercontent.com/foonil-pub/dockers-tensorflow/master/docker-ce-ubuntu1804.sh | sudo bash
+curl https://raw.github.com/foonil-pub/dockers-tensorflow/master/docker-ce-ubuntu1804.sh | sudo bash
 ```
 验证安装是否成功，Windows,Mac,Ubuntu都是在命令行界面，执行：
 ```sh
